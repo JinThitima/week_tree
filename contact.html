@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&family=Chakra+Petch:wght@300&family=Josefin+Sans:wght@100&family=K2D:wght@200;300&family=Noto+Serif+Gujarati:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'K2D', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: #0C356A;
+            color: white;
+            /* วัดระยะจากข้างใน บนสุด(padding-top) ขวาสุด(padding-right) ล่างสุด(padding-buttom) ซ้ายสุด(padding-left) */
+            padding: 10px 50px 10px 50px;
+            display: flex;
+            /* ชิดซ้ายและขวา */
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            left: 0;
+        }
+        .logo{
+            /* วัดระยะจากข้างนอก margin-left */
+            margin-left: 20px;
+        }
+        nav a{
+            color: #FFF0CE;
+            text-decoration: none;
+            /* 14 บนล่าง 16 ซ้ายขวา */
+            padding: 14px 16px;
+            display: inline-block;
+        }
+        #content{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+        }
+        footer{
+            background-color: #0C356A;
+            color: #FFF0CE;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a.btn{
+            height: 40px;
+            width: 150px;
+            margin-top: 15px;
+            border-radius: 30px;
+            background-color: #0C356A;
+            color: white;
+            border: solid 1px #0C356A;
+            padding-top: 18px;
+            text-align: center;
+            text-decoration: none;
+        }
+        /* ปุ่มเปลี่ยนสีสลับไปมา */
+        a.btn:hover{
+            background-color: white;
+            color: #0C356A;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Semantic Element -->
+    <nav>
+        <div class="logo">
+            <!-- <img src="" alt="LOGO" width="50"> -->
+            <img src="snapedit_1699759589397.png" alt="LOGO" width="70">
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <main id="content">
+        <h1>ติดต่อฉัน</h1>
+        <a href="https://web.facebook.com/thitimapankai1202" class="btn"><b>click here</b></a>
+    </main>
+
+    <footer>
+        &copy; Thitima Pankai นักศึกษาวิทยาลัยอาชีวศึกษานครปฐม
+    </footer>
+
+</body>
+
+</html>
